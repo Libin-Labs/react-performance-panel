@@ -1,0 +1,78 @@
+.lp-performance {
+  --lp-performance-accent: #2563eb;
+  --lp-performance-border: #b8c2d0;
+  font:
+    14px/1.5 system-ui,
+    sans-serif;
+  background: #fff;
+  color: #172033;
+  padding: 1rem;
+  border: 1px solid var(--lp-performance-border);
+  border-radius: 0.5rem;
+}
+.lp-performance button {
+  padding: 0.5rem;
+  border: 1px solid var(--lp-performance-border);
+  background: #f1f5f9;
+  color: inherit;
+  cursor: pointer;
+}
+.lp-performance button[aria-pressed='true'] {
+  border-color: var(--lp-performance-accent);
+  background: #eff6ff;
+}
+.lp-performance button:disabled {
+  cursor: default;
+  opacity: 1;
+}
+.lp-performance :focus-visible {
+  outline: 2px solid var(--lp-performance-accent);
+  outline-offset: 3px;
+}
+.lp-performance-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 0.5rem;
+}
+.lp-performance-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.lp-performance-summary dt {
+  font-weight: 600;
+}
+.lp-performance-summary dd {
+  margin: 0;
+}
+.lp-performance-timeline {
+  display: block;
+  width: 100%;
+  height: 12rem;
+  background: #f1f5f9;
+}
+.lp-performance-timeline polyline {
+  fill: none;
+  stroke: var(--lp-performance-accent);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+.lp-performance-timeline circle {
+  fill: var(--lp-performance-accent);
+}
+.lp-performance-scroll {
+  max-height: 20rem;
+  overflow: auto;
+}
+.lp-performance table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.lp-performance td,
+.lp-performance th {
+  padding: 0.4rem;
+  border-bottom: 1px solid var(--lp-performance-border);
+}
